@@ -1,0 +1,265 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/view-formatting.schema.json",
+  "hideSelection": true,
+  "hideColumnHeader": true,
+  "rowFormatter": {
+    "elmType": "div",
+    "_comment_": "MAIN DIV",
+    "style": {
+      "display": "flex",
+      "flex-wrap": "nowrap",
+      "flex-direction": "row",
+      "margin-bottom": "16px"
+    },
+    "children": [
+      {
+        "elmType": "div",
+        "_comment_": "DIV ONE - Project title",
+        "style": {
+          "width": "150px",
+          "margin-right": "16px"
+        },
+        "children": [
+          {
+            "elmType": "span",
+            "txtContent": "=[$Title]",
+            "style": {
+              "display": "=if([$Title] == '', 'none', 'block')"
+            },
+            "attributes": {
+              "class": "ms-fontSize-m ms-fontWeight-bold"
+            }
+          }
+        ]
+      },
+      {
+        "elmType": "div",
+        "_comment_": "DIV TWO - January",
+        "children": [
+          {
+            "elmType": "div",
+            "txtContent": "Jan",
+            "style": {
+              "display": "flex",
+              "align-items": "flex-end",
+              "width": "50px",
+              "height": "30px"
+            },
+            "attributes": {
+              "class": "=if(0 >= getMonth(Date([$StartDate])) && 2020 >= getYear(Date([$StartDate])) && 0 <= getMonth(Date([$DueDate])) && 2020 <= getYear(Date([$DueDate])), 'sp-field-dataBars ms-fontSize-s ms-bgColor-sharedBlue10 ms-fontColor-white', 'sp-field-dataBars ms-fontSize-s ms-bgColor-white')"
+            }
+          }
+        ]
+      },
+      {
+        "elmType": "div",
+        "_comment_": "DIV TWO - February",
+        "children": [
+          {
+            "elmType": "span",
+            "txtContent": "Feb",
+            "style": {
+              "display": "flex",
+              "align-items": "flex-end",
+              "width": "50px",
+              "height": "30px"
+            },
+            "attributes": {
+              "class": "=if(1 >= getMonth(Date([$StartDate])) && 2020 >= getYear(Date([$StartDate])) && 1 <= getMonth(Date([$DueDate])) && 2020 <= getYear(Date([$DueDate])), 'sp-field-dataBars ms-fontSize-s ms-bgColor-sharedBlue10 ms-fontColor-white', 'sp-field-dataBars ms-fontSize-s ms-bgColor-white')"
+            }
+          }
+        ]
+      },
+      {
+        "elmType": "div",
+        "_comment_": "DIV TWO - March",
+        "children": [
+          {
+            "elmType": "span",
+            "txtContent": "Mar",
+            "style": {
+              "display": "flex",
+              "align-items": "flex-end",
+              "width": "50px",
+              "height": "30px"
+            },
+            "attributes": {
+              "class": "=if(2 >= getMonth(Date([$StartDate])) && 2020 >= getYear(Date([$StartDate])) && 2 <= getMonth(Date([$DueDate])) && 2020 <= getYear(Date([$DueDate])), 'sp-field-dataBars ms-fontSize-s ms-bgColor-sharedBlue10 ms-fontColor-white', 'sp-field-dataBars ms-fontSize-s ms-bgColor-white')"
+            }
+          }
+        ]
+      },
+      {
+        "elmType": "div",
+        "_comment_": "DIV TWO - April",
+        "children": [
+          {
+            "elmType": "span",
+            "txtContent": "Apr",
+            "style": {
+              "display": "flex",
+              "align-items": "flex-end",
+              "width": "50px",
+              "height": "30px"
+            },
+            "attributes": {
+              "class": "=if(3 >= getMonth(Date([$StartDate])) && 2020 >= getYear(Date([$StartDate])) && 3 <= getMonth(Date([$DueDate])) && 2020 <= getYear(Date([$DueDate])), 'sp-field-dataBars ms-fontSize-s ms-bgColor-sharedBlue10 ms-fontColor-white', 'sp-field-dataBars ms-fontSize-s ms-bgColor-white')"
+            }
+          }
+        ]
+      },
+      {
+        "elmType": "div",
+        "_comment_": "DIV TWO - May",
+        "children": [
+          {
+            "elmType": "span",
+            "txtContent": "May",
+            "style": {
+              "display": "flex",
+              "align-items": "flex-end",
+              "width": "50px",
+              "height": "30px"
+            },
+            "attributes": {
+              "class": "=if(4 >= getMonth(Date([$StartDate])) && 2020 >= getYear(Date([$StartDate])) && 4 <= getMonth(Date([$DueDate])) && 2020 <= getYear(Date([$DueDate])), 'sp-field-dataBars ms-fontSize-s ms-bgColor-sharedBlue10 ms-fontColor-white', 'sp-field-dataBars ms-fontSize-s ms-bgColor-white')"
+            }
+          }
+        ]
+      },
+      {
+        "elmType": "div",
+        "_comment_": "DIV TWO - June",
+        "children": [
+          {
+            "elmType": "span",
+            "txtContent": "Jun",
+            "style": {
+              "display": "flex",
+              "align-items": "flex-end",
+              "width": "50px",
+              "height": "30px"
+            },
+            "attributes": {
+              "class": "=if(5 >= getMonth(Date([$StartDate])) && 2020 >= getYear(Date([$StartDate])) && 5 <= getMonth(Date([$DueDate])) && 2020 <= getYear(Date([$DueDate])), 'sp-field-dataBars ms-fontSize-s ms-bgColor-sharedBlue10 ms-fontColor-white', 'sp-field-dataBars ms-fontSize-s ms-bgColor-white')"
+            }
+          }
+        ]
+      },
+      {
+        "elmType": "div",
+        "_comment_": "DIV TWO - July",
+        "children": [
+          {
+            "elmType": "span",
+            "txtContent": "Jul",
+            "style": {
+              "display": "flex",
+              "align-items": "flex-end",
+              "width": "50px",
+              "height": "30px"
+            },
+            "attributes": {
+              "class": "=if(6 >= getMonth(Date([$StartDate])) && 2020 >= getYear(Date([$StartDate])) && 6 <= getMonth(Date([$DueDate])) && 2020 <= getYear(Date([$DueDate])), 'sp-field-dataBars ms-fontSize-s ms-bgColor-sharedBlue10 ms-fontColor-white', 'sp-field-dataBars ms-fontSize-s ms-bgColor-white')"
+            }
+          }
+        ]
+      },
+      {
+        "elmType": "div",
+        "_comment_": "DIV TWO - August",
+        "children": [
+          {
+            "elmType": "span",
+            "txtContent": "Aug",
+            "style": {
+              "display": "flex",
+              "align-items": "flex-end",
+              "width": "50px",
+              "height": "30px"
+            },
+            "attributes": {
+              "class": "=if(7 >= getMonth(Date([$StartDate])) && 2020 >= getYear(Date([$StartDate])) && 7 <= getMonth(Date([$DueDate])) && 2020 <= getYear(Date([$DueDate])), 'sp-field-dataBars ms-fontSize-s ms-bgColor-sharedBlue10 ms-fontColor-white', 'sp-field-dataBars ms-fontSize-s ms-bgColor-white')"
+            }
+          }
+        ]
+      },
+      {
+        "elmType": "div",
+        "_comment_": "DIV TWO - September",
+        "children": [
+          {
+            "elmType": "span",
+            "txtContent": "Sept",
+            "style": {
+              "display": "flex",
+              "align-items": "flex-end",
+              "width": "50px",
+              "height": "30px"
+            },
+            "attributes": {
+              "class": "=if(8 >= getMonth(Date([$StartDate])) && 2020 >= getYear(Date([$StartDate])) && 8 <= getMonth(Date([$DueDate])) && 2020 <= getYear(Date([$DueDate])), 'sp-field-dataBars ms-fontSize-s ms-bgColor-sharedBlue10 ms-fontColor-white', 'sp-field-dataBars ms-fontSize-s ms-bgColor-white')"
+            }
+          }
+        ]
+      },
+      {
+        "elmType": "div",
+        "_comment_": "DIV TWO - October",
+        "children": [
+          {
+            "elmType": "span",
+            "txtContent": "Oct",
+            "style": {
+              "display": "flex",
+              "align-items": "flex-end",
+              "width": "50px",
+              "height": "30px"
+            },
+            "attributes": {
+              "class": "=if(9 >= getMonth(Date([$StartDate])) && 2020 >= getYear(Date([$StartDate])) && 9 <= getMonth(Date([$DueDate])) && 2020 <= getYear(Date([$DueDate])), 'sp-field-dataBars ms-fontSize-s ms-bgColor-sharedBlue10 ms-fontColor-white', 'sp-field-dataBars ms-fontSize-s ms-bgColor-white')"
+            }
+          }
+        ]
+      },
+      {
+        "elmType": "div",
+        "_comment_": "DIV TWO - November",
+        "children": [
+          {
+            "elmType": "span",
+            "txtContent": "Nov",
+            "style": {
+              "display": "flex",
+              "align-items": "flex-end",
+              "width": "50px",
+              "height": "30px"
+            },
+            "attributes": {
+              "class": "=if(10 >= getMonth(Date([$StartDate])) && 2020 >= getYear(Date([$StartDate])) && 10 <= getMonth(Date([$DueDate])) && 2020 <= getYear(Date([$DueDate])), 'sp-field-dataBars ms-fontSize-s ms-bgColor-sharedBlue10 ms-fontColor-white', 'sp-field-dataBars ms-fontSize-s ms-bgColor-white')"
+            }
+          }
+        ]
+      },
+      {
+        "elmType": "div",
+        "_comment_": "DIV TWO - December",
+        "children": [
+          {
+            "elmType": "span",
+            "txtContent": "Dec",
+            "style": {
+              "display": "flex",
+              "align-items": "flex-end",
+              "width": "50px",
+              "height": "30px"
+            },
+            "attributes": {
+              "class": "=if(11 >= getMonth(Date([$StartDate])) && 2020 >= getYear(Date([$StartDate])) && 11 <= getMonth(Date([$DueDate])) && 2020 <= getYear(Date([$DueDate])), 'sp-field-dataBars ms-fontSize-s ms-bgColor-sharedBlue10 ms-fontColor-white', 'sp-field-dataBars ms-fontSize-s ms-bgColor-white')"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
